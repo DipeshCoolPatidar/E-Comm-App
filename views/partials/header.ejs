@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-['helvetica_now_display']">
+    <nav class="w-full flex justify-between px-5 py-3">
+        <h3 class="text-xl">Scatch</h3>
+        <% var loggedin = typeof loggedin !== "undefined" ? loggedin : true %>
+        <% if(loggedin){ %>
+        <div class=" flex gap-5">
+            <a href="/shop">Shop</a>
+            <a href="/cart">Cart</a>
+            <a href="">My Account</a>
+            <a class=" text-red-600" href="/users/logout">Logout</a>
+        </div>
+        <% } %>
+    </nav>
